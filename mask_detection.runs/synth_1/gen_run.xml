@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1772123744" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top_pynqz1.dcp">
+  <File Type="VDS-TIMINGSUMMARY" Name="tensil_pynqz2_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="tensil_pynqz2_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="tensil_pynqz2_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="tensil_pynqz2_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="tensil_pynqz2_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="tensil_pynqz2_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="tensil_pynqz2_wrapper_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="tensil_pynqz2_wrapper_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="tensil_pynqz2_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Downloads/rtl/bram_dp_128x2048.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Downloads/rtl/bram_dp_128x8192.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Downloads/rtl/top_pynqz1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/tensil_pynqz2/tensil_pynqz2.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/tensil_pynqz2/hdl/tensil_pynqz2_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tensil_pynqz2_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/top_pynqz1.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="tensil_pynqz2_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tensil_pynqz2_smartconnect_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tensil_pynqz2_axi_dma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tensil_pynqz2_smartconnect_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tensil_pynqz2_smartconnect_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tensil_pynqz2_smartconnect_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tensil_pynqz2_top_pynqz1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tensil_pynqz2_processing_system7_0_0"/>
+</GenRun>

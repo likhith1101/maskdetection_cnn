@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Thu Feb 26 19:39:17 2026
+# Process ID: 73732
+# Current directory: /home/likhith/mask_detection/mask_detection.runs/tensil_pynqz2_processing_system7_0_0_synth_1
+# Command line: vivado -log tensil_pynqz2_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tensil_pynqz2_processing_system7_0_0.tcl
+# Log file: /home/likhith/mask_detection/mask_detection.runs/tensil_pynqz2_processing_system7_0_0_synth_1/tensil_pynqz2_processing_system7_0_0.vds
+# Journal file: /home/likhith/mask_detection/mask_detection.runs/tensil_pynqz2_processing_system7_0_0_synth_1/vivado.jou
+# Running On: likhith-Inspiron-3593, OS: Linux, CPU Frequency: 1108.952 MHz, CPU Physical cores: 4, Host memory: 8079 MB
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in /home/likhith/.Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script '/home/likhith/.Xilinx/Vivado/init.tcl'
+source tensil_pynqz2_processing_system7_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1281.273 ; gain = 10.023 ; free physical = 130 ; free virtual = 1720
+WARNING: [Board 49-151] The current board 'tul.com.tw::pynq-z2:1.0' is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues
+Command: synth_design -top tensil_pynqz2_processing_system7_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 73952

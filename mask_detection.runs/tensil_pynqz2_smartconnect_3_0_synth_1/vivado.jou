@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Thu Feb 26 22:08:32 2026
+# Process ID: 17959
+# Current directory: /home/likhith/mask_detection/mask_detection.runs/tensil_pynqz2_smartconnect_3_0_synth_1
+# Command line: vivado -log tensil_pynqz2_smartconnect_3_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tensil_pynqz2_smartconnect_3_0.tcl
+# Log file: /home/likhith/mask_detection/mask_detection.runs/tensil_pynqz2_smartconnect_3_0_synth_1/tensil_pynqz2_smartconnect_3_0.vds
+# Journal file: /home/likhith/mask_detection/mask_detection.runs/tensil_pynqz2_smartconnect_3_0_synth_1/vivado.jou
+# Running On: likhith-Inspiron-3593, OS: Linux, CPU Frequency: 1923.867 MHz, CPU Physical cores: 4, Host memory: 8079 MB
+#-----------------------------------------------------------
+source tensil_pynqz2_smartconnect_3_0.tcl -notrace

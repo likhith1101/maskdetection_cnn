@@ -1,0 +1,55 @@
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2.2 (lin64) Build 3788238 Tue Feb 21 19:59:23 MST 2023
+| Date         : Thu Feb 26 22:16:11 2026
+| Host         : likhith-Inspiron-3593 running 64-bit Ubuntu 22.04.2 LTS
+| Command      : report_methodology -file tensil_pynqz2_wrapper_methodology_drc_routed.rpt -pb tensil_pynqz2_wrapper_methodology_drc_routed.pb -rpx tensil_pynqz2_wrapper_methodology_drc_routed.rpx
+| Design       : tensil_pynqz2_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 2
++--------+----------+-----------------------------+------------+
+| Rule   | Severity | Description                 | Violations |
++--------+----------+-----------------------------+------------+
+| RTGT-1 | Advisory | RAM retargeting possibility | 2          |
++--------+----------+-----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+RTGT-1#1 Advisory
+RAM retargeting possibility  
+Identified 6 RAM32X1D primitives that could be retargeted to RAM32M. Retargeting will save approximately 2 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/acc_io_control_q/ram_accumulate_reg_0_1_0_0,
+tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/acc_io_control_q/ram_instruction_dest_reg_0_1_0_0,
+tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/acc_io_control_q/ram_instruction_sourceLeft_reg_0_1_0_0,
+tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/acc_io_control_q/ram_instruction_sourceRight_reg_0_1_0_0,
+tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/acc_io_control_q/ram_read_reg_0_1_0_0
+tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/acc_io_control_q/ram_write_reg_0_1_0_0
+Related violations: <none>
+
+RTGT-1#2 Advisory
+RAM retargeting possibility  
+Identified 6 RAM32X1D primitives that could be retargeted to RAM32M. Retargeting will save approximately 2 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/decoder/acc/ram_accumulate_reg_0_15_0_0,
+tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/decoder/acc/ram_instruction_dest_reg_0_15_0_0,
+tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/decoder/acc/ram_instruction_sourceLeft_reg_0_15_0_0,
+tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/decoder/acc/ram_instruction_sourceRight_reg_0_15_0_0,
+tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/decoder/acc/ram_read_reg_0_15_0_0
+tensil_pynqz2_i/top_pynqz1_0/inst/tcu/tcu/decoder/acc/ram_write_reg_0_15_0_0
+Related violations: <none>
+
+

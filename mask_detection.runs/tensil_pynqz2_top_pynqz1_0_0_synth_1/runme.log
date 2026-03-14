@@ -1,0 +1,1555 @@
+
+*** Running vivado
+    with args -log tensil_pynqz2_top_pynqz1_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tensil_pynqz2_top_pynqz1_0_0.tcl
+
+
+****** Vivado v2022.2.2 (64-bit)
+  **** SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+  **** IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+    ** Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-1460] Use of init.tcl in /home/likhith/.Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script '/home/likhith/.Xilinx/Vivado/init.tcl'
+source tensil_pynqz2_top_pynqz1_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1341.637 ; gain = 0.023 ; free physical = 1033 ; free virtual = 4940
+WARNING: [Board 49-151] The current board 'tul.com.tw::pynq-z2:1.0' is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/likhith/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: tensil_pynqz2_top_pynqz1_0_0
+Command: synth_design -top tensil_pynqz2_top_pynqz1_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18530
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/likhith/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1986.852 ; gain = 370.770 ; free physical = 483 ; free virtual = 4393
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1284.862; parent = 1125.320; children = 159.542
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2997.305; parent = 1998.762; children = 998.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tensil_pynqz2_top_pynqz1_0_0' [/home/likhith/mask_detection/mask_detection.gen/sources_1/bd/tensil_pynqz2/ip/tensil_pynqz2_top_pynqz1_0_0/synth/tensil_pynqz2_top_pynqz1_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_pynqz1' [/home/likhith/Downloads/rtl/top_pynqz1.v:19536]
+INFO: [Synth 8-6157] synthesizing module 'AXIWrapperTCU' [/home/likhith/Downloads/rtl/top_pynqz1.v:18320]
+INFO: [Synth 8-6157] synthesizing module 'TCU' [/home/likhith/Downloads/rtl/top_pynqz1.v:13860]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [/home/likhith/Downloads/rtl/top_pynqz1.v:3028]
+INFO: [Synth 8-6157] synthesizing module 'Queue' [/home/likhith/Downloads/rtl/top_pynqz1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Queue' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'StrideHandler' [/home/likhith/Downloads/rtl/top_pynqz1.v:377]
+INFO: [Synth 8-6157] synthesizing module 'SizeAndStrideHandler' [/home/likhith/Downloads/rtl/top_pynqz1.v:318]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [/home/likhith/Downloads/rtl/top_pynqz1.v:170]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:170]
+INFO: [Synth 8-6157] synthesizing module 'CountBy' [/home/likhith/Downloads/rtl/top_pynqz1.v:242]
+INFO: [Synth 8-6155] done synthesizing module 'CountBy' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:242]
+INFO: [Synth 8-6155] done synthesizing module 'SizeAndStrideHandler' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'StrideHandler' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:377]
+INFO: [Synth 8-6157] synthesizing module 'Queue_2' [/home/likhith/Downloads/rtl/top_pynqz1.v:436]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_2' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:436]
+INFO: [Synth 8-6157] synthesizing module 'SizeAndStrideHandler_2' [/home/likhith/Downloads/rtl/top_pynqz1.v:793]
+INFO: [Synth 8-6157] synthesizing module 'Counter_2' [/home/likhith/Downloads/rtl/top_pynqz1.v:645]
+INFO: [Synth 8-6155] done synthesizing module 'Counter_2' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:645]
+INFO: [Synth 8-6157] synthesizing module 'CountBy_2' [/home/likhith/Downloads/rtl/top_pynqz1.v:717]
+INFO: [Synth 8-6155] done synthesizing module 'CountBy_2' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:717]
+INFO: [Synth 8-6155] done synthesizing module 'SizeAndStrideHandler_2' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:793]
+INFO: [Synth 8-6157] synthesizing module 'LockPool' [/home/likhith/Downloads/rtl/top_pynqz1.v:852]
+INFO: [Synth 8-6155] done synthesizing module 'LockPool' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:852]
+INFO: [Synth 8-6157] synthesizing module 'SizeAndStrideHandler_4' [/home/likhith/Downloads/rtl/top_pynqz1.v:1476]
+INFO: [Synth 8-6157] synthesizing module 'Counter_4' [/home/likhith/Downloads/rtl/top_pynqz1.v:1328]
+INFO: [Synth 8-6155] done synthesizing module 'Counter_4' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:1328]
+INFO: [Synth 8-6157] synthesizing module 'CountBy_4' [/home/likhith/Downloads/rtl/top_pynqz1.v:1400]
+INFO: [Synth 8-6155] done synthesizing module 'CountBy_4' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:1400]
+INFO: [Synth 8-6155] done synthesizing module 'SizeAndStrideHandler_4' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:1476]
+INFO: [Synth 8-6157] synthesizing module 'Queue_4' [/home/likhith/Downloads/rtl/top_pynqz1.v:1556]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_4' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:1556]
+INFO: [Synth 8-6157] synthesizing module 'SizeHandler' [/home/likhith/Downloads/rtl/top_pynqz1.v:1968]
+INFO: [Synth 8-6155] done synthesizing module 'SizeHandler' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:1968]
+INFO: [Synth 8-6157] synthesizing module 'Queue_5' [/home/likhith/Downloads/rtl/top_pynqz1.v:2003]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_5' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:2003]
+INFO: [Synth 8-6157] synthesizing module 'Queue_6' [/home/likhith/Downloads/rtl/top_pynqz1.v:2185]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_6' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:2185]
+INFO: [Synth 8-6157] synthesizing module 'SizeHandler_1' [/home/likhith/Downloads/rtl/top_pynqz1.v:2342]
+INFO: [Synth 8-6155] done synthesizing module 'SizeHandler_1' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:2342]
+INFO: [Synth 8-6157] synthesizing module 'Queue_7' [/home/likhith/Downloads/rtl/top_pynqz1.v:2374]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_7' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:2374]
+INFO: [Synth 8-6157] synthesizing module 'MultiEnqueue' [/home/likhith/Downloads/rtl/top_pynqz1.v:2509]
+INFO: [Synth 8-6155] done synthesizing module 'MultiEnqueue' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:2509]
+INFO: [Synth 8-6157] synthesizing module 'MultiEnqueue_1' [/home/likhith/Downloads/rtl/top_pynqz1.v:2580]
+INFO: [Synth 8-6155] done synthesizing module 'MultiEnqueue_1' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:2580]
+INFO: [Synth 8-6157] synthesizing module 'MultiEnqueue_2' [/home/likhith/Downloads/rtl/top_pynqz1.v:2668]
+INFO: [Synth 8-6155] done synthesizing module 'MultiEnqueue_2' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:2668]
+INFO: [Synth 8-6157] synthesizing module 'MultiEnqueue_3' [/home/likhith/Downloads/rtl/top_pynqz1.v:2772]
+INFO: [Synth 8-6155] done synthesizing module 'MultiEnqueue_3' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:2772]
+INFO: [Synth 8-6157] synthesizing module 'MultiEnqueue_4' [/home/likhith/Downloads/rtl/top_pynqz1.v:2892]
+INFO: [Synth 8-6155] done synthesizing module 'MultiEnqueue_4' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:2892]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:3028]
+INFO: [Synth 8-6157] synthesizing module 'SystolicArray' [/home/likhith/Downloads/rtl/top_pynqz1.v:7040]
+INFO: [Synth 8-6157] synthesizing module 'InnerSystolicArray' [/home/likhith/Downloads/rtl/top_pynqz1.v:4658]
+INFO: [Synth 8-6157] synthesizing module 'MAC' [/home/likhith/Downloads/rtl/top_pynqz1.v:4550]
+INFO: [Synth 8-6155] done synthesizing module 'MAC' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:4550]
+INFO: [Synth 8-6155] done synthesizing module 'InnerSystolicArray' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:4658]
+INFO: [Synth 8-6157] synthesizing module 'Queue_8' [/home/likhith/Downloads/rtl/top_pynqz1.v:6663]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_8' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:6663]
+INFO: [Synth 8-6155] done synthesizing module 'SystolicArray' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:7040]
+INFO: [Synth 8-6157] synthesizing module 'AccumulatorWithALUArray' [/home/likhith/Downloads/rtl/top_pynqz1.v:10474]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator' [/home/likhith/Downloads/rtl/top_pynqz1.v:8935]
+INFO: [Synth 8-6157] synthesizing module 'DualPortMem' [/home/likhith/Downloads/rtl/top_pynqz1.v:7904]
+INFO: [Synth 8-6157] synthesizing module 'InnerDualPortMem' [/home/likhith/Downloads/rtl/top_pynqz1.v:7431]
+INFO: [Synth 8-6157] synthesizing module 'bram_dp_128x2048' [/home/likhith/Downloads/rtl/bram_dp_128x2048.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bram_dp_128x2048' (0#1) [/home/likhith/Downloads/rtl/bram_dp_128x2048.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'InnerDualPortMem' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:7431]
+INFO: [Synth 8-6157] synthesizing module 'Queue_10' [/home/likhith/Downloads/rtl/top_pynqz1.v:7521]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_10' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:7521]
+INFO: [Synth 8-6155] done synthesizing module 'DualPortMem' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:7904]
+INFO: [Synth 8-6157] synthesizing module 'VecAdder' [/home/likhith/Downloads/rtl/top_pynqz1.v:8235]
+INFO: [Synth 8-6155] done synthesizing module 'VecAdder' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:8235]
+INFO: [Synth 8-6157] synthesizing module 'LockPool_1' [/home/likhith/Downloads/rtl/top_pynqz1.v:8417]
+INFO: [Synth 8-6155] done synthesizing module 'LockPool_1' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:8417]
+INFO: [Synth 8-6157] synthesizing module 'Queue_14' [/home/likhith/Downloads/rtl/top_pynqz1.v:8560]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_14' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:8560]
+INFO: [Synth 8-6157] synthesizing module 'Demux' [/home/likhith/Downloads/rtl/top_pynqz1.v:8719]
+INFO: [Synth 8-6155] done synthesizing module 'Demux' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:8719]
+INFO: [Synth 8-6157] synthesizing module 'Queue_15' [/home/likhith/Downloads/rtl/top_pynqz1.v:8776]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_15' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:8776]
+INFO: [Synth 8-6157] synthesizing module 'Mux' [/home/likhith/Downloads/rtl/top_pynqz1.v:8886]
+INFO: [Synth 8-6155] done synthesizing module 'Mux' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:8886]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:8935]
+INFO: [Synth 8-6157] synthesizing module 'ALUArray' [/home/likhith/Downloads/rtl/top_pynqz1.v:10099]
+INFO: [Synth 8-6157] synthesizing module 'Queue_17' [/home/likhith/Downloads/rtl/top_pynqz1.v:9580]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_17' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:9580]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [/home/likhith/Downloads/rtl/top_pynqz1.v:9885]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:9885]
+INFO: [Synth 8-6155] done synthesizing module 'ALUArray' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:10099]
+INFO: [Synth 8-6155] done synthesizing module 'AccumulatorWithALUArray' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:10474]
+INFO: [Synth 8-6157] synthesizing module 'DualPortMem_1' [/home/likhith/Downloads/rtl/top_pynqz1.v:11521]
+INFO: [Synth 8-6157] synthesizing module 'InnerDualPortMem_1' [/home/likhith/Downloads/rtl/top_pynqz1.v:11420]
+INFO: [Synth 8-6157] synthesizing module 'bram_dp_128x8192' [/home/likhith/Downloads/rtl/bram_dp_128x8192.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bram_dp_128x8192' (0#1) [/home/likhith/Downloads/rtl/bram_dp_128x8192.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'InnerDualPortMem_1' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:11420]
+INFO: [Synth 8-6155] done synthesizing module 'DualPortMem_1' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:11521]
+INFO: [Synth 8-6157] synthesizing module 'LocalRouter' [/home/likhith/Downloads/rtl/top_pynqz1.v:12459]
+INFO: [Synth 8-6157] synthesizing module 'Demux_3' [/home/likhith/Downloads/rtl/top_pynqz1.v:11891]
+INFO: [Synth 8-6155] done synthesizing module 'Demux_3' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:11891]
+INFO: [Synth 8-6157] synthesizing module 'SizeHandler_2' [/home/likhith/Downloads/rtl/top_pynqz1.v:11968]
+INFO: [Synth 8-6155] done synthesizing module 'SizeHandler_2' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:11968]
+INFO: [Synth 8-6157] synthesizing module 'Queue_25' [/home/likhith/Downloads/rtl/top_pynqz1.v:12000]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_25' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:12000]
+INFO: [Synth 8-6157] synthesizing module 'SizeHandler_3' [/home/likhith/Downloads/rtl/top_pynqz1.v:12135]
+INFO: [Synth 8-6155] done synthesizing module 'SizeHandler_3' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:12135]
+INFO: [Synth 8-6157] synthesizing module 'Queue_26' [/home/likhith/Downloads/rtl/top_pynqz1.v:12167]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_26' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:12167]
+INFO: [Synth 8-6157] synthesizing module 'Queue_27' [/home/likhith/Downloads/rtl/top_pynqz1.v:12302]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_27' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:12302]
+INFO: [Synth 8-6155] done synthesizing module 'LocalRouter' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:12459]
+INFO: [Synth 8-6157] synthesizing module 'HostRouter' [/home/likhith/Downloads/rtl/top_pynqz1.v:13125]
+INFO: [Synth 8-6155] done synthesizing module 'HostRouter' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:13125]
+INFO: [Synth 8-6157] synthesizing module 'Queue_28' [/home/likhith/Downloads/rtl/top_pynqz1.v:13394]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_28' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:13394]
+INFO: [Synth 8-6157] synthesizing module 'Queue_29' [/home/likhith/Downloads/rtl/top_pynqz1.v:13716]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_29' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:13716]
+INFO: [Synth 8-6155] done synthesizing module 'TCU' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:13860]
+INFO: [Synth 8-6157] synthesizing module 'MemBoundarySplitter' [/home/likhith/Downloads/rtl/top_pynqz1.v:15294]
+INFO: [Synth 8-6157] synthesizing module 'Queue_30' [/home/likhith/Downloads/rtl/top_pynqz1.v:14869]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_30' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:14869]
+INFO: [Synth 8-6157] synthesizing module 'Queue_32' [/home/likhith/Downloads/rtl/top_pynqz1.v:14999]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_32' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:14999]
+INFO: [Synth 8-6157] synthesizing module 'BurstSplitter' [/home/likhith/Downloads/rtl/top_pynqz1.v:15201]
+INFO: [Synth 8-6157] synthesizing module 'Counter_10' [/home/likhith/Downloads/rtl/top_pynqz1.v:15129]
+INFO: [Synth 8-6155] done synthesizing module 'Counter_10' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:15129]
+INFO: [Synth 8-6155] done synthesizing module 'BurstSplitter' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:15201]
+INFO: [Synth 8-6157] synthesizing module 'BurstSplitter_1' [/home/likhith/Downloads/rtl/top_pynqz1.v:15238]
+INFO: [Synth 8-6155] done synthesizing module 'BurstSplitter_1' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:15238]
+INFO: [Synth 8-6157] synthesizing module 'Filter' [/home/likhith/Downloads/rtl/top_pynqz1.v:15281]
+INFO: [Synth 8-6155] done synthesizing module 'Filter' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:15281]
+INFO: [Synth 8-6155] done synthesizing module 'MemBoundarySplitter' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:15294]
+INFO: [Synth 8-6157] synthesizing module 'Converter' [/home/likhith/Downloads/rtl/top_pynqz1.v:17110]
+INFO: [Synth 8-6157] synthesizing module 'Queue_36' [/home/likhith/Downloads/rtl/top_pynqz1.v:15794]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_36' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:15794]
+INFO: [Synth 8-6157] synthesizing module 'RequestSplitter' [/home/likhith/Downloads/rtl/top_pynqz1.v:15963]
+INFO: [Synth 8-6155] done synthesizing module 'RequestSplitter' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:15963]
+INFO: [Synth 8-6157] synthesizing module 'Queue_37' [/home/likhith/Downloads/rtl/top_pynqz1.v:16083]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_37' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:16083]
+INFO: [Synth 8-6157] synthesizing module 'Queue_38' [/home/likhith/Downloads/rtl/top_pynqz1.v:16377]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_38' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:16377]
+INFO: [Synth 8-6157] synthesizing module 'Queue_39' [/home/likhith/Downloads/rtl/top_pynqz1.v:16521]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_39' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:16521]
+INFO: [Synth 8-6157] synthesizing module 'VectorSerializer' [/home/likhith/Downloads/rtl/top_pynqz1.v:16611]
+INFO: [Synth 8-6155] done synthesizing module 'VectorSerializer' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:16611]
+INFO: [Synth 8-6157] synthesizing module 'DataCounter' [/home/likhith/Downloads/rtl/top_pynqz1.v:16832]
+INFO: [Synth 8-6155] done synthesizing module 'DataCounter' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:16832]
+INFO: [Synth 8-6157] synthesizing module 'VectorDeserializer' [/home/likhith/Downloads/rtl/top_pynqz1.v:16867]
+INFO: [Synth 8-6155] done synthesizing module 'VectorDeserializer' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:16867]
+INFO: [Synth 8-6155] done synthesizing module 'Converter' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:17110]
+INFO: [Synth 8-6157] synthesizing module 'Queue_45' [/home/likhith/Downloads/rtl/top_pynqz1.v:18067]
+INFO: [Synth 8-6157] synthesizing module 'Queue_40' [/home/likhith/Downloads/rtl/top_pynqz1.v:17587]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_40' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:17587]
+INFO: [Synth 8-6157] synthesizing module 'Queue_42' [/home/likhith/Downloads/rtl/top_pynqz1.v:17900]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_42' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:17900]
+INFO: [Synth 8-6155] done synthesizing module 'Queue_45' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:18067]
+INFO: [Synth 8-6155] done synthesizing module 'AXIWrapperTCU' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:18320]
+INFO: [Synth 8-6157] synthesizing module 'Transmission' [/home/likhith/Downloads/rtl/top_pynqz1.v:19507]
+INFO: [Synth 8-6157] synthesizing module 'StrictDecoupledTransmission' [/home/likhith/Downloads/rtl/top_pynqz1.v:19495]
+INFO: [Synth 8-6155] done synthesizing module 'StrictDecoupledTransmission' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:19495]
+INFO: [Synth 8-6155] done synthesizing module 'Transmission' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:19507]
+INFO: [Synth 8-6155] done synthesizing module 'top_pynqz1' (0#1) [/home/likhith/Downloads/rtl/top_pynqz1.v:19536]
+INFO: [Synth 8-6155] done synthesizing module 'tensil_pynqz2_top_pynqz1_0_0' (0#1) [/home/likhith/mask_detection/mask_detection.gen/sources_1/bd/tensil_pynqz2/ip/tensil_pynqz2_top_pynqz1_0_0/synth/tensil_pynqz2_top_pynqz1_0_0.v:53]
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_write_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_write_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_address_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_address_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_size_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_size_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_stride_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_stride_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_reverse_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_reverse_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_kind_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_kind_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_size_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_size_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_write_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_write_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_address_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_address_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_size_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_size_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_sel_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_sel_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_size_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_size_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_sel_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_sel_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_size_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_size_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port io_timeout in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_tracepoint in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[31] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[30] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[29] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[28] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[27] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[26] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[25] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[24] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[23] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[22] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[21] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[20] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[19] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[18] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[17] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[16] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[15] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[14] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[13] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[12] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[11] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[10] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[9] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[8] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[7] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[6] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[5] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[4] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[3] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[2] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[1] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[0] in module Converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_timeout in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_tracepoint in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[31] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[30] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[29] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[28] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[27] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[26] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[25] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[24] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[23] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[22] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[21] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[20] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[19] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[18] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[17] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[16] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[15] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[14] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[13] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[12] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[11] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[10] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[9] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[8] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[7] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[6] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[5] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[4] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[3] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[2] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[1] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[0] in module LocalRouter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_portA_read_enable in module InnerDualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_portB_read_enable in module InnerDualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_tracepoint in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[31] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[30] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[29] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[28] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[27] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[26] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[25] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[24] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[23] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[22] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[21] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[20] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[19] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[18] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[17] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[16] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[15] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[14] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[13] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[12] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[11] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[10] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[9] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[8] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[7] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[6] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[5] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[4] in module DualPortMem_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_programCounter[3] in module DualPortMem_1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2134.727 ; gain = 518.645 ; free physical = 487 ; free virtual = 4406
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1284.862; parent = 1125.320; children = 159.542
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3133.273; parent = 2134.730; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2143.633 ; gain = 527.551 ; free physical = 474 ; free virtual = 4394
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1284.862; parent = 1125.320; children = 159.542
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3142.180; parent = 2143.637; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2143.633 ; gain = 527.551 ; free physical = 473 ; free virtual = 4392
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1284.862; parent = 1125.320; children = 159.542
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3142.180; parent = 2143.637; children = 998.543
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.28 . Memory (MB): peak = 2143.633 ; gain = 0.000 ; free physical = 468 ; free virtual = 4388
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2293.414 ; gain = 0.000 ; free physical = 346 ; free virtual = 4265
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2293.414 ; gain = 0.000 ; free physical = 336 ; free virtual = 4255
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/likhith/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 352 ; free virtual = 4271
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1284.862; parent = 1125.320; children = 159.542
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 348 ; free virtual = 4268
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1284.862; parent = 1125.320; children = 159.542
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 351 ; free virtual = 4270
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1284.862; parent = 1125.320; children = 159.542
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "bram_dp_128x2048:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "bram_dp_128x8192:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 335 ; free virtual = 4257
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1284.862; parent = 1125.320; children = 159.542
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input   25 Bit       Adders := 72    
+	   2 Input   21 Bit       Adders := 2     
+	   2 Input   20 Bit       Adders := 8     
+	   3 Input   20 Bit       Adders := 2     
+	   2 Input   19 Bit       Adders := 40    
+	   2 Input   16 Bit       Adders := 8     
+	   2 Input   14 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 11    
+	   3 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 6     
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 18    
+	   3 Input    8 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 16    
+	   3 Input    2 Bit       Adders := 8     
+	   2 Input    2 Bit       Adders := 8     
+	   2 Input    1 Bit       Adders := 60    
++---Registers : 
+	              128 Bit    Registers := 4     
+	               32 Bit    Registers := 4     
+	               25 Bit    Registers := 64    
+	               20 Bit    Registers := 8     
+	               16 Bit    Registers := 313   
+	               13 Bit    Registers := 14    
+	               11 Bit    Registers := 9     
+	                8 Bit    Registers := 14    
+	                4 Bit    Registers := 21    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 194   
++---RAMs : 
+	            1024K Bit	(8192 X 128 bit)          RAMs := 1     
+	             256K Bit	(2048 X 128 bit)          RAMs := 1     
+	              128 Bit	(2 X 64 bit)          RAMs := 6     
+	              112 Bit	(2 X 56 bit)          RAMs := 1     
+	               64 Bit	(2 X 32 bit)          RAMs := 4     
+	               40 Bit	(2 X 20 bit)          RAMs := 4     
+	               32 Bit	(2 X 16 bit)          RAMs := 16    
+	               22 Bit	(2 X 11 bit)          RAMs := 2     
+	               16 Bit	(2 X 8 bit)          RAMs := 6     
+	               12 Bit	(2 X 6 bit)          RAMs := 6     
+	                8 Bit	(2 X 4 bit)          RAMs := 11    
+	                6 Bit	(2 X 3 bit)          RAMs := 8     
+	                4 Bit	(2 X 2 bit)          RAMs := 8     
+	                2 Bit	(2 X 1 bit)          RAMs := 14    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 9     
+	   6 Input   32 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   25 Bit        Muxes := 192   
+	   2 Input   20 Bit        Muxes := 31    
+	   4 Input   20 Bit        Muxes := 5     
+	   2 Input   16 Bit        Muxes := 411   
+	   8 Input   16 Bit        Muxes := 1     
+	  10 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 3     
+	   2 Input   13 Bit        Muxes := 56    
+	   4 Input   13 Bit        Muxes := 11    
+	   5 Input   13 Bit        Muxes := 1     
+	   3 Input   13 Bit        Muxes := 3     
+	   2 Input   11 Bit        Muxes := 66    
+	   4 Input   11 Bit        Muxes := 5     
+	   5 Input   11 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 58    
+	   5 Input    8 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 8     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 25    
+	   4 Input    3 Bit        Muxes := 12    
+	   8 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 14    
+	   6 Input    2 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 511   
+	   3 Input    1 Bit        Muxes := 22    
+	   5 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 30    
+	   6 Input    1 Bit        Muxes := 7     
+	   7 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP output_mac, operation Mode is: C+A*B2.
+DSP Report: register weight_reg is absorbed into DSP output_mac.
+DSP Report: operator output_mac is absorbed into DSP output_mac.
+DSP Report: operator _output_mac_T is absorbed into DSP output_mac.
+DSP Report: Generating DSP _result_mac_T_8, operation Mode is: A*B.
+DSP Report: operator _result_mac_T_8 is absorbed into DSP _result_mac_T_8.
+DSP Report: Generating DSP _result_mac_T_8, operation Mode is: A*B.
+DSP Report: operator _result_mac_T_8 is absorbed into DSP _result_mac_T_8.
+DSP Report: Generating DSP _result_mac_T_8, operation Mode is: A*B.
+DSP Report: operator _result_mac_T_8 is absorbed into DSP _result_mac_T_8.
+DSP Report: Generating DSP _result_mac_T_8, operation Mode is: A*B.
+DSP Report: operator _result_mac_T_8 is absorbed into DSP _result_mac_T_8.
+DSP Report: Generating DSP _result_mac_T_8, operation Mode is: A*B.
+DSP Report: operator _result_mac_T_8 is absorbed into DSP _result_mac_T_8.
+DSP Report: Generating DSP _result_mac_T_8, operation Mode is: A*B.
+DSP Report: operator _result_mac_T_8 is absorbed into DSP _result_mac_T_8.
+DSP Report: Generating DSP _result_mac_T_8, operation Mode is: A*B.
+DSP Report: operator _result_mac_T_8 is absorbed into DSP _result_mac_T_8.
+DSP Report: Generating DSP _result_mac_T_8, operation Mode is: A*B.
+DSP Report: operator _result_mac_T_8 is absorbed into DSP _result_mac_T_8.
+DSP Report: Generating DSP _req_T_2, operation Mode is: C+A*B.
+DSP Report: operator _req_T_2 is absorbed into DSP _req_T_2.
+DSP Report: operator _req_T is absorbed into DSP _req_T_2.
+WARNING: [Synth 8-6014] Unused sequential element mem/mem/mem/ram_reg was removed. 
+INFO: [Synth 8-3971] The signal "tensil_pynqz2_top_pynqz1_0_0/mem/mem/mem/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1475 ; free virtual = 5421
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1457.414; parent = 1274.448; children = 182.966
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-----------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                  | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|tcui_3/\acc/acc              | mem/mem/mem/ram_reg | 2 K x 128(READ_FIRST)  | W | R | 2 K x 128(WRITE_FIRST) |   | R | Port A and B     | 1      | 7      | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/mem/mem/ram_reg | 8 K x 128(READ_FIRST)  | W | R | 8 K x 128(READ_FIRST)  | W | R | Port A and B     | 0      | 32     | 
++-----------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------+-------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name                  | RTL Object                                                        | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------+-------------------------------------------------------------------+-----------+----------------------+---------------+
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_0_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_1_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_2_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_3_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_4_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_5_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_6_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_7_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_0_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_1_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_2_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_3_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_4_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_5_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_6_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_7_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_0_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_1_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_2_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_3_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_4_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_5_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_6_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_7_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_0_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_1_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_2_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_3_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_4_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_5_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_6_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_7_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | array_io_control_q/ram_load_reg                                   | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | array_io_control_q/ram_zeroes_reg                                 | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_instruction_op_reg                           | Implied   | 2 x 4                | RAM32M x 1    | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_write_reg                                    | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_read_reg                                     | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_writeAddress_reg                             | Implied   | 2 x 11               | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_readAddress_reg                              | Implied   | 2 x 11               | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_0_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_1_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_2_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_3_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_4_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_5_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_6_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_7_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_0_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_1_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_2_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_3_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_4_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_5_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_6_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_7_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_instruction_sourceLeft_reg                   | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_instruction_sourceRight_reg                  | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_instruction_dest_reg                         | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_accumulate_reg                               | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | router/accWriteDataMux/ram_size_reg                               | Implied   | 16 x 13              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | router/accWriteDataMux/ram_sel_reg                                | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_instruction_op_reg                                            | Implied   | 16 x 4               | RAM32M x 1    | 
+|tcui_4/decoder/acc           | ram_instruction_sourceLeft_reg                                    | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_instruction_sourceRight_reg                                   | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_instruction_dest_reg                                          | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_address_reg                                                   | Implied   | 16 x 11              | RAM32M x 2    | 
+|tcui_4/decoder/acc           | ram_altAddress_reg                                                | Implied   | 16 x 11              | RAM32M x 2    | 
+|tcui_4/decoder/acc           | ram_read_reg                                                      | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_write_reg                                                     | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_accumulate_reg                                                | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_size_reg                                                      | Implied   | 16 x 11              | RAM32M x 2    | 
+|tcui_4/decoder/acc           | ram_stride_reg                                                    | Implied   | 16 x 3               | RAM32M x 1    | 
+|tcui_4/decoder/array         | ram_load_reg                                                      | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/array         | ram_zeroes_reg                                                    | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/array         | ram_size_reg                                                      | Implied   | 16 x 13              | RAM32M x 3    | 
+|tcui_4/decoder/dataflow      | ram_kind_reg                                                      | Implied   | 16 x 4               | RAM32M x 1    | 
+|tcui_4/decoder/dataflow      | ram_size_reg                                                      | Implied   | 16 x 13              | RAM32M x 3    | 
+|tcui_4/decoder               | instruction/ram_opcode_reg                                        | Implied   | 2 x 4                | RAM32M x 1    | 
+|tcui_4/decoder               | instruction/ram_flags_reg                                         | Implied   | 2 x 4                | RAM32M x 1    | 
+|tcui_4/decoder               | instruction/ram_arguments_reg                                     | Implied   | 2 x 56               | RAM32M x 10   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter/writeResponseQueue/ram_reg                  | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter/readDataQueue/ram_reg                       | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter/writeDataQueue/ram_reg                      | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter/writeResponseQueue/ram_reg                  | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter/readDataQueue/ram_reg                       | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter/writeDataQueue/ram_reg                      | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/control_q/ram_write_reg                            | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/control_q/ram_size_reg                             | Implied   | 2 x 20               | RAM32M x 4    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/readData/ram_last_reg                              | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_0_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_1_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_2_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_3_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_4_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_5_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_6_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_7_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/readData/ram_data_reg                              | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/control_q/ram_address_reg                          | Implied   | 2 x 20               | RAM32M x 4    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_readAddress_q/ram_addr_reg   | Implied   | 2 x 32               | RAM32M x 6    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_readAddress_q/ram_len_reg    | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_readAddress_q/ram_cache_reg  | Implied   | 2 x 4                | RAM32M x 1    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_addr_reg  | Implied   | 2 x 32               | RAM32M x 6    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_len_reg   | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_cache_reg | Implied   | 2 x 4                | RAM32M x 1    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_writeData_q/ram_data_reg     | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_writeData_q/ram_strb_reg     | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_in_readData_q/ram_data_reg       | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_in_readData_q/ram_last_reg       | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/control_q/ram_write_reg                            | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/control_q/ram_size_reg                             | Implied   | 2 x 20               | RAM32M x 4    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/readData/ram_last_reg                              | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_0_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_1_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_2_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_3_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_4_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_5_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_6_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_7_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/readData/ram_data_reg                              | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/control_q/ram_address_reg                          | Implied   | 2 x 20               | RAM32M x 4    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_readAddress_q/ram_addr_reg   | Implied   | 2 x 32               | RAM32M x 6    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_readAddress_q/ram_len_reg    | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_readAddress_q/ram_cache_reg  | Implied   | 2 x 4                | RAM32M x 1    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_addr_reg  | Implied   | 2 x 32               | RAM32M x 6    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_len_reg   | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_cache_reg | Implied   | 2 x 4                | RAM32M x 1    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_writeData_q/ram_data_reg     | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_writeData_q/ram_strb_reg     | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_in_readData_q/ram_data_reg       | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_in_readData_q/ram_last_reg       | Implied   | 2 x 1                | RAM16X1D x 1  | 
++-----------------------------+-------------------------------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|MAC         | C+A*B2      | 16     | 16     | 24     | -      | 33     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Decoder     | C+A*B       | 13     | 8      | 13     | -      | 13     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1331 ; free virtual = 5277
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.689; parent = 1384.727; children = 182.966
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1329 ; free virtual = 5276
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1569.393; parent = 1386.430; children = 182.966
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-----------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                  | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|tcui_3/\acc/acc              | mem/mem/mem/ram_reg | 2 K x 128(READ_FIRST)  | W | R | 2 K x 128(WRITE_FIRST) |   | R | Port A and B     | 1      | 7      | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/mem/mem/ram_reg | 8 K x 128(READ_FIRST)  | W | R | 8 K x 128(READ_FIRST)  | W | R | Port A and B     | 0      | 32     | 
++-----------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++-----------------------------+-------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name                  | RTL Object                                                        | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------+-------------------------------------------------------------------+-----------+----------------------+---------------+
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_0_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_1_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_2_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_3_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_4_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_5_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_6_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | output_/ram_7_reg                                                 | Implied   | 16 x 16              | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_0_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_1_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_2_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_3_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_4_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_5_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_6_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_/ram_7_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_0_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_1_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_2_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_3_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_4_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_5_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_6_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/acc              | mem/output_1/ram_7_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_0_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_1_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_2_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_3_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_4_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_5_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_6_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tcui_3/\acc/alu /output_     | ram_7_reg                                                         | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | array_io_control_q/ram_load_reg                                   | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | array_io_control_q/ram_zeroes_reg                                 | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_instruction_op_reg                           | Implied   | 2 x 4                | RAM32M x 1    | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_write_reg                                    | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_read_reg                                     | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_writeAddress_reg                             | Implied   | 2 x 11               | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_readAddress_reg                              | Implied   | 2 x 11               | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_0_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_1_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_2_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_3_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_4_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_5_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_6_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_/ram_7_reg                                             | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_0_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_1_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_2_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_3_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_4_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_5_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_6_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | mem/output_1/ram_7_reg                                            | Implied   | 4 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_instruction_sourceLeft_reg                   | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_instruction_sourceRight_reg                  | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_instruction_dest_reg                         | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | acc_io_control_q/ram_accumulate_reg                               | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | router/accWriteDataMux/ram_size_reg                               | Implied   | 16 x 13              | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | router/accWriteDataMux/ram_sel_reg                                | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_instruction_op_reg                                            | Implied   | 16 x 4               | RAM32M x 1    | 
+|tcui_4/decoder/acc           | ram_instruction_sourceLeft_reg                                    | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_instruction_sourceRight_reg                                   | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_instruction_dest_reg                                          | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_address_reg                                                   | Implied   | 16 x 11              | RAM32M x 2    | 
+|tcui_4/decoder/acc           | ram_altAddress_reg                                                | Implied   | 16 x 11              | RAM32M x 2    | 
+|tcui_4/decoder/acc           | ram_read_reg                                                      | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_write_reg                                                     | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_accumulate_reg                                                | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/acc           | ram_size_reg                                                      | Implied   | 16 x 11              | RAM32M x 2    | 
+|tcui_4/decoder/acc           | ram_stride_reg                                                    | Implied   | 16 x 3               | RAM32M x 1    | 
+|tcui_4/decoder/array         | ram_load_reg                                                      | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/array         | ram_zeroes_reg                                                    | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|tcui_4/decoder/array         | ram_size_reg                                                      | Implied   | 16 x 13              | RAM32M x 3    | 
+|tcui_4/decoder/dataflow      | ram_kind_reg                                                      | Implied   | 16 x 4               | RAM32M x 1    | 
+|tcui_4/decoder/dataflow      | ram_size_reg                                                      | Implied   | 16 x 13              | RAM32M x 3    | 
+|tcui_4/decoder               | instruction/ram_opcode_reg                                        | Implied   | 2 x 4                | RAM32M x 1    | 
+|tcui_4/decoder               | instruction/ram_flags_reg                                         | Implied   | 2 x 4                | RAM32M x 1    | 
+|tcui_4/decoder               | instruction/ram_arguments_reg                                     | Implied   | 2 x 56               | RAM32M x 10   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter/writeResponseQueue/ram_reg                  | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter/readDataQueue/ram_reg                       | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter/writeDataQueue/ram_reg                      | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter/writeResponseQueue/ram_reg                  | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter/readDataQueue/ram_reg                       | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter/writeDataQueue/ram_reg                      | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/control_q/ram_write_reg                            | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/control_q/ram_size_reg                             | Implied   | 2 x 20               | RAM32M x 4    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/readData/ram_last_reg                              | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_0_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_1_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_2_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_3_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_4_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_5_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_6_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/dataOut/ram_7_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/readData/ram_data_reg                              | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0Converter/control_q/ram_address_reg                          | Implied   | 2 x 20               | RAM32M x 4    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_readAddress_q/ram_addr_reg   | Implied   | 2 x 32               | RAM32M x 6    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_readAddress_q/ram_len_reg    | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_readAddress_q/ram_cache_reg  | Implied   | 2 x 4                | RAM32M x 1    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_addr_reg  | Implied   | 2 x 32               | RAM32M x 6    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_len_reg   | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_cache_reg | Implied   | 2 x 4                | RAM32M x 1    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_writeData_q/ram_data_reg     | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_out_writeData_q/ram_strb_reg     | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_in_readData_q/ram_data_reg       | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram0BoundarySplitter_io_in_q/io_in_readData_q/ram_last_reg       | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/control_q/ram_write_reg                            | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/control_q/ram_size_reg                             | Implied   | 2 x 20               | RAM32M x 4    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/readData/ram_last_reg                              | Implied   | 2 x 1                | RAM16X1D x 1  | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_0_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_1_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_2_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_3_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_4_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_5_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_6_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/dataOut/ram_7_reg                                  | Implied   | 2 x 16               | RAM32M x 3    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/readData/ram_data_reg                              | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1Converter/control_q/ram_address_reg                          | Implied   | 2 x 20               | RAM32M x 4    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_readAddress_q/ram_addr_reg   | Implied   | 2 x 32               | RAM32M x 6    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_readAddress_q/ram_len_reg    | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_readAddress_q/ram_cache_reg  | Implied   | 2 x 4                | RAM32M x 1    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_addr_reg  | Implied   | 2 x 32               | RAM32M x 6    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_len_reg   | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_writeAddress_q/ram_cache_reg | Implied   | 2 x 4                | RAM32M x 1    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_writeData_q/ram_data_reg     | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_out_writeData_q/ram_strb_reg     | Implied   | 2 x 8                | RAM32M x 2    | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_in_readData_q/ram_data_reg       | Implied   | 2 x 64               | RAM32M x 11   | 
+|tensil_pynqz2_top_pynqz1_0_0 | dram1BoundarySplitter_io_in_q/io_in_readData_q/ram_last_reg       | Implied   | 2 x 1                | RAM16X1D x 1  | 
++-----------------------------+-------------------------------------------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/acc/acc/mem/mem/mem/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tcu/tcu/mem/mem/mem/ram_reg_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1307 ; free virtual = 5253
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1588.510; parent = 1405.550; children = 182.966
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1303 ; free virtual = 5251
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1592.237; parent = 1409.271; children = 182.966
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1303 ; free virtual = 5251
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1592.237; parent = 1409.271; children = 182.966
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1303 ; free virtual = 5249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1595.676; parent = 1412.710; children = 182.966
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1303 ; free virtual = 5249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1595.738; parent = 1412.772; children = 182.966
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1303 ; free virtual = 5249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1595.789; parent = 1412.823; children = 182.966
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1303 ; free virtual = 5249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1595.789; parent = 1412.823; children = 182.966
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                  | RTL Name                                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|tensil_pynqz2_top_pynqz1_0_0 | inst/tcu/tcu/array/array/mac_0_6_io_mulInput_sr_4_reg[15] | 5      | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|tensil_pynqz2_top_pynqz1_0_0 | inst/tcu/tcu/array/array/mac_0_7_io_mulInput_sr_5_reg[15] | 6      | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|tensil_pynqz2_top_pynqz1_0_0 | inst/tcu/tcu/array/array/io_output_0_sr_6_reg[15]         | 7      | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|tensil_pynqz2_top_pynqz1_0_0 | inst/tcu/tcu/array/array/io_output_1_sr_5_reg[15]         | 6      | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|tensil_pynqz2_top_pynqz1_0_0 | inst/tcu/tcu/array/array/io_output_2_sr_4_reg[15]         | 5      | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|tensil_pynqz2_top_pynqz1_0_0 | inst/tcu/tcu/array/array/io_output_3_sr_3_reg[15]         | 4      | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|tensil_pynqz2_top_pynqz1_0_0 | inst/tcu/tcu/array/array/mac_0_5_io_mulInput_sr_3_reg[15] | 4      | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|tensil_pynqz2_top_pynqz1_0_0 | inst/tcu/tcu/array/output_io_enq_valid_sr_14_reg          | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++-----------------------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | C'+A*B''    | 30     | 18     | 48     | -      | 33     | 0    | 2    | 2    | -    | -     | 0    | 0    | 
+|MAC         | C+A'*B'     | 30     | 18     | 48     | -      | 33     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C'+A'*B''   | 30     | 18     | 48     | -      | 33     | 1    | 2    | 2    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C'+A''*B''  | 30     | 18     | 48     | -      | 33     | 2    | 2    | 2    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C'+A''*B''  | 30     | 18     | 48     | -      | 33     | 2    | 2    | 2    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C'+A''*B''  | 30     | 18     | 48     | -      | 33     | 2    | 2    | 2    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C'+A''*B''  | 30     | 18     | 48     | -      | 33     | 2    | 2    | 2    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C'+A''*B''  | 30     | 18     | 48     | -      | 33     | 2    | 2    | 2    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C'+A''*B''  | 30     | 18     | 48     | -      | 33     | 2    | 2    | 2    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|MAC         | C+A''*B'    | 30     | 18     | 48     | -      | 33     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|Decoder     | C+A*B       | 13     | 8      | 13     | -      | 13     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |  1436|
+|2     |DSP48E1  |    73|
+|9     |LUT1     |   387|
+|10    |LUT2     |  2052|
+|11    |LUT3     |  4220|
+|12    |LUT4     |  1114|
+|13    |LUT5     |   937|
+|14    |LUT6     |  2396|
+|15    |MUXF7    |   128|
+|16    |RAM16X1D |    25|
+|17    |RAM32M   |   335|
+|18    |RAM32X1D |    18|
+|19    |RAMB18E1 |     1|
+|20    |RAMB36E1 |    39|
+|22    |SRL16E   |   113|
+|23    |FDRE     |  5200|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1303 ; free virtual = 5249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1595.867; parent = 1412.901; children = 182.966
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3259.945; parent = 2261.402; children = 998.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 2293.414 ; gain = 527.551 ; free physical = 1368 ; free virtual = 5315
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 2293.414 ; gain = 677.332 ; free physical = 1368 ; free virtual = 5315
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2293.414 ; gain = 0.000 ; free physical = 1481 ; free virtual = 5428
+INFO: [Netlist 29-17] Analyzing 2055 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2293.414 ; gain = 0.000 ; free physical = 1413 ; free virtual = 5360
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 378 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 25 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 335 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 18 instances
+
+Synth Design complete, checksum: 2f9adef2
+INFO: [Common 17-83] Releasing license: Synthesis
+269 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:20 . Memory (MB): peak = 2293.414 ; gain = 951.777 ; free physical = 1665 ; free virtual = 5611
+INFO: [Common 17-1381] The checkpoint '/home/likhith/mask_detection/mask_detection.runs/tensil_pynqz2_top_pynqz1_0_0_synth_1/tensil_pynqz2_top_pynqz1_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP tensil_pynqz2_top_pynqz1_0_0, cache-ID = 5a7884878af439e7
+INFO: [Coretcl 2-1174] Renamed 210 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/likhith/mask_detection/mask_detection.runs/tensil_pynqz2_top_pynqz1_0_0_synth_1/tensil_pynqz2_top_pynqz1_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tensil_pynqz2_top_pynqz1_0_0_utilization_synth.rpt -pb tensil_pynqz2_top_pynqz1_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 26 22:11:19 2026...
